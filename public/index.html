@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="#hero"><i class="fas fa-home"></i></a>
+            
+            <!-- <svg width="70" height="50" viewBox="0 0 134.326 77.197" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#482ff7" stroke-width="0.55mm" fill="none" style="stroke:#482ff7;stroke-width:0.25mm;fill:none"><path d="M 91.211 0 L 50.635 77.197 L 41.064 77.197 L 81.592 0 L 91.211 0 Z M 90.674 51.123 L 121.924 39.795 L 94.531 28.711 L 96.484 17.529 L 134.326 35.742 L 132.666 45.166 L 88.525 63.33 L 90.674 51.123 Z M 42.383 29.395 L 12.5 40.527 L 38.574 51.465 L 36.572 62.793 L 0 44.58 L 1.66 35.156 L 44.58 16.992 L 42.383 29.395 Z" vector-effect="non-scaling-stroke"/></g></svg> -->
+        </div>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="hero">
+        <h1> Justin Delille, <br> Web Developer </h1>
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#about" class="btn">About Me</a>
+        <div class="icon-container">
+            <div class='icons'>
+                <p>Follow me</p>
+                <a href="https://github.com/jDelille"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/justin-delille/"><i class="fab fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="testing">
+            <h1> Projects </h1>
+        </div>
+        <div class="img-container">
+            <div class="project-pics">
+                <a href="https://the-stat-bowl.herokuapp.com/" target="blank">
+                    <img class="screenshot" src="images/project-screenshot.JPG" " />
+                </a>
+            </div>
+            <div class="screenshot-text">
+                <p>The Stat Bowl is a website that lets you view current NFL stats, records, and betting odds. It uses NFLpickwatch api to gather data. </p>
+                <h2>Javascript | Node js | Express | Cors | Axios</h2>
+            </div>
+            <a  class="demo-btn" target="blank" href="https://www.loom.com/share/6ed8c776955b48578026904b6f20f008">View Demo</a>
+            
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <h1> About Me </h1>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I'm Justin Delille, a <span>web developer</span> that's passionate about my work. I love everything about code from the design to the bugs. My favorite thing about web developement is creating something from nothing and doing it while collaborating with others. When I am not coding, I love to play the guitar because it allows me to be creative, work towards a goal, and play the music I love! </p>
+            </div>
+            <div class="skills-container">
+                <h1> My Skills </h1>
+                <div class="skills-icons">
+                    <div class="skill-box">
+                        <i class="fab fa-html5"></i>
+                        <br>
+                        <p> HTML </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fab fa-css3-alt"></i>
+                        <br>
+                        <p> CSS </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fab fa-js"></i>
+                        <br>
+                        <p> Javascript </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fab fa-node-js"></i>
+                        <br>
+                        <p> Node js </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fab fa-git-alt"></i>
+                        <br>
+                        <p> Git </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <h1> Contact </h1>
+        </div>
+        <div class="contact-container">  
+            <form>
+                <input type="text" id="toName" placeholder="Name"/>
+                <input tyoe="text" id="fromName"placeholder="Email"/>
+                <textarea rows="12" cols="45" id="msg" placeholder="Message..."></textarea>
+                <button onclick="sendMail()"> Send Email </button>
+            </form>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <!-- MAIL JS - - - - - - - - - - -  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_lMpLCcFidlwsJpErojn72");
+        })();
+    </script>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>

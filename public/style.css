@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --white: #f0f0f0;
+    --blue: #482ff7;
+    --black: #000;
+    --poppins: 'Poppins', sans-serif;
+    --box-shadow: 0 2px 2px -1px rgba(0,0,0,.4);
+    --font-size: 17px;
+}
+
+html {
+    scroll-behavior:smooth
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+body {
+    background-color: var(--white);
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    box-shadow: var(--box-shadow);
+    font-size: var(--font-size);
+    position: fixed;
+    z-index: 2;
+}
+
+.brand {
+    color: var(--blue);
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    gap: 1em;
+    font-family: var(--poppins);
+}
+
+li a {
+    color: var(--blue);
+    text-decoration: none;
+    /* transition: all 2s ease-in-out; */
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.fas {
+    color: var(--black);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* =|==============
+    HERO SECTION
+================ */
+
+#hero {
+    background-color: var(--white);
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    padding: 0 7%;
+    border-bottom: 1px solid black;
+}
+
+#hero h1 {
+    position: relative;
+    top: 160px;
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.btn {
+    border: 2px solid var(--blue);
+    position: relative;
+    top: 190px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.icon-container {
+    width: 40%;
+    height: 20%;
+    margin-left: auto;
+    position: relative;
+    top: 320px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.icons {
+    margin-left: auto;
+    position: relative;
+    top: 40px;
+    display: flex;
+    gap: 1em;
+}
+
+.icons p {
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    font-style: italic;
+    color: rgb(115, 112, 112);
+}
+
+.fab {
+    font-size: 2.5em;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.fab:hover {
+    color: var(--blue);
+}
+
+/* =|==============
+     PROJECTS
+================ */
+
+#projects {
+    height: 100vh;
+    background-color: var(--white);
+    border-bottom: 1px solid black;
+}
+
+.testing {
+    background-color: var(--blue);
+    width: 420px;
+    height: 70px;
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.testing h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.img-container {
+    margin: 0 auto;
+    position: relative;
+    height: 70%;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;  
+    padding: 0 4%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.demo-btn {
+    padding: 10px 30px;
+    border: 1px solid var(--blue);
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.project-pics {
+    position: relative;
+    bottom: 50px;
+}
+
+.screenshot {
+    max-width: 600px;
+    transition: all .2s ease;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.screenshot:hover {
+    -webkit-transform:scale(1.2);
+}
+
+.screenshot-text {
+    width: 600px;
+    position: relative;
+    bottom: 15px;
+}
+
+.screenshot-text h2 {
+    font-size: 16px;
+}
+
+
+
+
+
+/* =|==============
+     ABOUT ME
+================ */
+
+#about {
+    height: 95vh;
+    background-color: var(--white);
+    border-bottom: 1px solid rgb(115, 112, 112);
+}
+
+.about {
+    background-color: var(--blue);
+    width: 420px;
+    height: 70px;
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.about h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.about-container {
+    position: relative;
+    top: 120px;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 20px;
+}
+
+.about-text span {
+    text-decoration: underline;
+}
+
+.skills-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: -40px;
+}
+
+.skills-container h1 {
+    text-decoration: underline;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    right: 10px;
+    
+}
+
+.skills-icons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.skill-box {
+    text-align: center;
+}
+
+.fa-html5 {
+    color: #dd4b25;
+}
+
+.fa-css3-alt {
+    color: #0079C0;
+}
+
+.fa-js {
+    color: #E8D44D;
+}
+
+.fa-node-js {
+    color: #509941;
+}
+
+.fa-git-alt {
+    color: #E84D31;
+}
+
+
+
+
+
+
+
+/* =|==============
+     CONTACT
+================ */
+
+#contact {
+    height: 90vh;
+    background-color: var(--white);
+}
+
+.contact {
+    background-color: var(--blue);
+    width: 420px;
+    height: 70px;
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.contact h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 60%;
+    position: relative;
+    top: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left {
+    width: 50%;
+    height: 85%;
+}
+
+.contact-follow {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    height: 40%;
+}
+
+.follow-me {
+    text-decoration: underline;
+}
+
+.contact-follow .fab {
+    margin-left: 6px;
+}
+
+.contact-left h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input {
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+textarea {
+    margin-top: 20px;;
+}
+
+form button {
+    background-color: var(--blue);
+    color: var(--white);
+    height: 45px;
+    cursor: pointer;
+    margin-top: 6px;
+    border: solid;
+    font-size: 16px;
+}
+
+/* =|==============
+     FOOTER
+================ */
+
+footer {
+    width: 100%;
+    height: 10%;
+}
