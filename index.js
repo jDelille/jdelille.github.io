@@ -29,15 +29,15 @@ anime({
       x: -300,
   })
 
-  gsap.from('.about-container', {
-    scrollTrigger: {
-        trigger: ".about-container",   
-        start: "top bottom",  
-        scrub: 1
-      },
-      opacity: .2,
-      y: 100,
-  })
+  // gsap.from('.about-text', {
+  //   scrollTrigger: {
+  //       trigger: ".about-text",   
+  //       start: "top bottom",  
+  //       scrub: 1
+  //     },
+  //     opacity: .2,
+  //     y: 100,
+  // })
 
 
   gsap.from('.contact', {

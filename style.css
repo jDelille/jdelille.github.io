@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --white: #f0f0f0;
+    --white: #222831;
     --blue: #482ff7;
-    --black: #000;
+    --black: #f0f0f0;
     --poppins: 'Poppins', sans-serif;
     --box-shadow: 0 2px 2px -1px rgba(0,0,0,.4);
     --font-size: 17px;
@@ -55,13 +55,14 @@ ul {
 }
 
 li a {
-    color: var(--blue);
+    color: var(--black);
     text-decoration: none;
     /* transition: all 2s ease-in-out; */
 }
 
 li a:hover {
     text-decoration: underline;
+    
 }
 
 .fas {
@@ -88,10 +89,11 @@ li a:hover {
     top: 160px;
     font-size: 4em;
     font-weight: 800;
+    color: var(--black);
 }
 
 .btn {
-    border: 2px solid var(--blue);
+    border: 2px solid var(--black);
     position: relative;
     top: 190px;
     padding: 10px 30px;
@@ -99,6 +101,11 @@ li a:hover {
     font-size: 18px;
     text-decoration: none;
     color: var(--black);
+}
+
+.btn:hover {
+    background-color: var(--black);
+    color: black;
 }
 
 .icon-container {
@@ -149,7 +156,7 @@ li a:hover {
 }
 
 .testing {
-    background-color: var(--blue);
+    background-color: var(--black);
     width: 420px;
     height: 70px;
     position: relative;
@@ -179,14 +186,25 @@ li a:hover {
     flex-direction: column;
 }
 
+.demo-btn-container {
+    width: 43%;
+    margin: 0 auto;
+    display: flex;
+}
+
 .demo-btn {
     padding: 10px 30px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--black);
     position: relative;
     top: 10px;
     cursor: pointer;
     text-decoration: none;
     color: var(--black);
+}
+
+.demo-btn:hover {
+    background-color: var(--black);
+    color: black;
 }
 
 .project-pics {
@@ -200,6 +218,7 @@ li a:hover {
     vertical-align: middle;
     cursor: pointer;
     box-shadow: var(--box-shadow);
+    border-radius: 7px;
     
 }
 
@@ -211,6 +230,7 @@ li a:hover {
     width: 600px;
     position: relative;
     bottom: 15px;
+    color: var(--black);
 }
 
 .screenshot-text h2 {
@@ -232,7 +252,7 @@ li a:hover {
 }
 
 .about {
-    background-color: var(--blue);
+    background-color: var(--black);
     width: 420px;
     height: 70px;
     position: relative;
@@ -262,6 +282,7 @@ li a:hover {
     margin: 0 auto;
     position: relative;
     font-size: 20px;
+    color: var(--black)
 }
 
 .about-text span {
@@ -282,6 +303,7 @@ li a:hover {
     margin: 0 auto;
     position: relative;
     right: 10px;
+    color: var(--black)
     
 }
 
@@ -296,6 +318,7 @@ li a:hover {
 
 .skill-box {
     text-align: center;
+    color: var(--black)
 }
 
 .fa-html5 {
@@ -334,7 +357,7 @@ li a:hover {
 }
 
 .contact {
-    background-color: var(--blue);
+    background-color: var(--black);
     width: 420px;
     height: 70px;
     position: relative;
@@ -397,20 +420,37 @@ form {
 input {
     height: 40px;
     margin-bottom: 6px;
+    background-color: var(--white);
+    border: solid;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    padding-left: 16px;
+
 }
 
 textarea {
     margin-top: 20px;;
+    background-color: var(--white);
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding-left: 16px;
 }
 
 form button {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--white);
+    border: 1px solid white;
+    color: var(--black);
     height: 45px;
     cursor: pointer;
     margin-top: 6px;
-    border: solid;
     font-size: 16px;
+}
+
+form button:hover {
+    background-color: var(--black);
+    color: black;
 }
 
 /* =|==============
