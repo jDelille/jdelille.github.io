@@ -323,21 +323,46 @@ li a:hover {
 
 .fa-html5 {
     color: #dd4b25;
+    cursor: default;
+}
+
+.fa-html5:hover {
+    color: #dd4b25;
 }
 
 .fa-css3-alt {
+    color: #0079C0;
+    cursor: default;
+}
+
+.fa-css3-alt:hover {
     color: #0079C0;
 }
 
 .fa-js {
     color: #E8D44D;
+    cursor: default;
+}
+
+.fa-js:hover {
+    color: #E8D44D;
 }
 
 .fa-node-js {
     color: #509941;
+    cursor: default;
+}
+
+.fa-node-js:hover {
+    color: #509941;
 }
 
 .fa-git-alt {
+    color: #E84D31;
+    cursor: default;
+}
+
+.fa-git-alt:hover {
     color: #E84D31;
 }
 
